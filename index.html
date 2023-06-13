@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="looks.css" />
+
+    <title>Fruit Basket</title>
+  </head>
+  <body>
+    <main>
+      <div id="game-intro">
+        <button id="start-button">start game</button>
+        <img src="./basketIntro.png" alt="basket of fruit" />
+        <p>USE ARROW KEYS TO MOVE BASKET</p>
+        <img src="direction.png" />
+      </div>
+      <div id="game1-container">
+        <div class="score-elements">
+        <h2>stats</h2>
+        <p>score: <span id="score">0</p>
+        <p>lives: <span id="lives">10</span></p>
+    </div>
+        <div id="game-container"></div>
+      </div>
+
+      <div id="game-end">
+        <img src="./basket.png" alt="basket of fruit" />
+        <h1>GAME OVER</h1>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+      <button> Game Restart</button>
+      <div></div>
+    </main>
+    <script type="text/javascript" src="basket.js"></script>
+    <script type="text/javascript" src="fruits.js"></script>
+    <script type="text/javascript" src="gameplay.js"></script>
+    <script type="text/javascript" src="fruitScript.js"></script>
+  </body>
+</html>
