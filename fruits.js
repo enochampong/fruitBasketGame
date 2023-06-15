@@ -28,15 +28,12 @@ class fruit {
   }
 
   updatePosition() {
-    // Update the obstacle's position based on the properties left and top
     this.element.style.left = `${this.left}px`;
     this.element.style.top = `${this.top}px`;
   }
 
   move() {
-    // Move the obstacle down by 3px
     this.top += 5;
-    // Update the obstacle's position on the screen
     this.updatePosition();
   }
 }
