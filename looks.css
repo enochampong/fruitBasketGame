@@ -1,32 +1,44 @@
 body {
+  color: pink;
+  font-weight: bold;
+  font-family: "Helvetica", Sans-Serif;
+  background-image: url("fruit-bowl-with-linnens.jpg");
   padding: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 27px;
 }
 
 #game-intro {
+  height: 800px;
   padding: 20px 0px;
+  justify-content: center;
+  align-content: center;
 }
 
 #game1-container {
   display: flex;
   width: 100vw;
-  padding: 20px 0px;
+  padding: 100px 10px;
   justify-content: center;
+  align-items: center;
 }
 
 #game-container {
-  background-color: black;
   display: none;
   align-content: center;
   padding: 20px 0px;
   overflow: hidden;
   position: relative;
-  background-image: url(../basket/fruit\ background.jfif);
   background-size: cover;
   animation: slide 5s linear infinite;
 }
 
+.img-button-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+  margin: auto;
+}
 @keyframes slide {
   0% {
     background-position: 0 -1000px;
@@ -65,11 +77,14 @@ body {
 body button {
   font-size: 30px;
   background-color: blue;
-  color: #fff;
+  color: pink;
   padding: 20px 40px;
   border: 0;
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
   position: center;
+}
+.firstImg {
+  justify-content: left;
 }
